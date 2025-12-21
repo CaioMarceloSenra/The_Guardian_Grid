@@ -1,3 +1,5 @@
+```mermaid
+
 graph TD
     subgraph "🐍 SEUS SCRIPTS PYTHON (No Host)"
         style Gerador fill:#f9f,stroke:#333,stroke-width:2px,color:black
@@ -30,4 +32,5 @@ graph TD
     Kafka == "2. Consome Tópico" ==> Arquivista
     Arquivista == "3. Grava Histórico" ==> Mongo
     Mongo -. "4. Lê Janela de Tempo" .-> Oraculo
+    ´´´
     Oraculo == "5. Renderiza" ==> Tela
