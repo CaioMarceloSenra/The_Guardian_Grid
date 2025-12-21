@@ -1,3 +1,10 @@
+# Meu Projeto Guardian Grid
+
+Aqui vai a descrição do projeto...
+
+## Arquitetura do Sistema
+
+```mermaid
 %%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#ffcccc', 'edgeLabelBackground':'#ffffff', 'tertiaryColor': '#f4f4f4'}}}%%
 graph TD
     subgraph "🐍 SEUS SCRIPTS PYTHON (No Host)"
@@ -35,4 +42,7 @@ graph TD
 
     %% Legenda de fluxo
     linkStyle 0,1,2,4 stroke:#00ff00,stroke-width:3px,fill:none;
-    linkStyle 3 stroke:#ffaa00,stroke-width:3px,fill:none,stroke-dasharray: 5 5;
+    linkStyle 3 stroke:#ffaa00,s
+graph TD
+...
+```troke-width:3px,fill:none,stroke-dasharray: 5 5;
