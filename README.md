@@ -1,4 +1,3 @@
-%%{init: {'theme': 'base', 'themeVariables': { 'primaryColor': '#ffcccc', 'edgeLabelBackground':'#ffffff', 'tertiaryColor': '#f4f4f4'}}}%%
 graph TD
     subgraph "🐍 SEUS SCRIPTS PYTHON (No Host)"
         style Gerador fill:#f9f,stroke:#333,stroke-width:2px,color:black
@@ -26,13 +25,9 @@ graph TD
         end
     end
 
-    %% O CAMINHO DO DADO (Sintaxe Ajustada para o GitHub)
-    Gerador == "1. Envia JSON (Voltagem)" ==> Kafka
-    Kafka == "2. Consome (Tópico: medidor-energia)" ==> Arquivista
+    %% O CAMINHO DO DADO
+    Gerador == "1. Envia JSON" ==> Kafka
+    Kafka == "2. Consome Tópico" ==> Arquivista
     Arquivista == "3. Grava Histórico" ==> Mongo
     Mongo -. "4. Lê Janela de Tempo" .-> Oraculo
-    Oraculo == "5. Renderiza Catástrofe" ==> Tela
-
-    %% Legenda de fluxo (Cores)
-    linkStyle 0,1,2,4 stroke:#00ff00,stroke-width:3px,fill:none;
-    linkStyle 3 stroke:#ffaa00,stroke-width:3px,fill:none,stroke-dasharray: 5 5;
+    Oraculo == "5. Renderiza" ==> Tela
