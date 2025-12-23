@@ -36,7 +36,7 @@ services:
     depends_on:
       - kafka
     ports:
-      - "9000:9000" #localhost:9000 web access
+      - "9000:9000" #localhost:9000 acesso web
     environment:
       KAFKA_BROKERCONNECT: "kafka:29092" # internal kafka containers address
       JVM_OPTS: "-Xms16M -Xmx64M" #limita o uso de memória do kafdrop
